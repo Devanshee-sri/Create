@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+    
+body{
+background-color:rgb(228 58 210 / 50%);
+}
+#mydiv {
+  width: 400px;
+  height: 400px;
+  background: rgb(211, 33, 131);
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: rgb(224, 33, 138);}
+  to {background-color: rgb(212, 200, 92);}
+}
+.container{
+margin:auto;
+height:400px;
+width:400px;
+background-color:rgba(0,0,0,0.5);
+text-align:center;
+margin-top:100px;
+}
+
+
+input[type="text"] input[type="password"]{
+margin-top:20px;
+border:none;
+outline:none;
+background:transparent;
+border-bottom:1px solid white;
+color:white;
+}
+
+#btn{
+outline:none;
+border:none;
+margin-top:20px;
+width:100px;
+height:25px;
+cursor:pointer;
+}
+
+#btn:hover{
+background-color:#009688;
+}
+
+::placeholder{
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container" id="mydiv"/>                                     
+
+<div>
+<input type="text" placeholder="Username"/>
+</div>
+
+<div>
+<input type="password" placeholder="Password"/>
+</div>
+
+<div>
+<input type="password" placeholder="Confirm Password"/>
+</div>
+
+<div>
+<button id="btn">Login</button>
+</div>
+</div>
+</body>
+</html>
