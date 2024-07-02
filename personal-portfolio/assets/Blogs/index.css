@@ -1,0 +1,10 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(128, 128, 128, 0.794);
+}
+
+  a:hover{
+    background-color: grey;
+    font-size: 20px;
+  }

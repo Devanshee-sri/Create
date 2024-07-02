@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: #32012f;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e2dfd0;
+}
+
+.custom-padding {
+  padding: 1rem 1rem;
+}
+.custom-padding-top-bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.custom-margin-top-bottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  padding-top: 1rem;
+}
+nav {
+  background-color: #e2dfd0;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px #6f0000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #32012f;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #f97300;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: 0.2s all;
+}
+
+.blog-post-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #443737;
+  gap: 2rem;
+  border-radius: 5px;
+}
+.blog-post-section article {
+  background-color: #e2dfd0;
+  border-radius: 5px;
+  width: 25rem;
+  padding: 1rem;
+}
+.blog-post-section article iframe,
+video {
+  width: 100%;
+}
+.blog-post-section article img {
+  width: 100%;
+}
+
+#about {
+  margin: 1rem;
+  box-shadow: 1px 1px 10px #6f0000;
+  background-color: #fff;
+}
+#about h2 {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+#contact {
+  margin: 1rem;
+  margin-top: 2rem;
+  box-shadow: 1px 1px 10px #f97300;
+  background-color: #414141;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form input {
+  color: #000;
+  outline: none;
+  margin: 0.2rem 0;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+}
+#contact form textarea {
+  color: #000;
+  outline: none;
+  margin: 0.2rem 0;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+#contact form label {
+  color: #fff;
+}
+
+#contact button {
+  color: #000;
+  width: 200px;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #f97300;
+  color: #f97300;
+  transition: 0.5s all;
+}
+
+#contact button:hover {
+  background-color: #fff;
+  color: #f97300;
+  border: 2px solid #fff;
+}
+#contact h2 {
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+#contact a {
+  width: 85px;
+  color: #e2dfd0;
+  transition: 0.5s all;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer {
+  background-color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+  box-shadow: 1px 1px 10px #6f0000;
+}
+footer p {
+  font-weight: bold;
+}
+
+#contact a {
+  display: flex;
+  align-items: center;
+  margin: 0.1rem 0;
+}
+#contact a span {
+  margin-right: 4px;
+}
+#contact a span i {
+  color: #fff;
+}
+.my-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #f97300;
+  font-weight: bold;
+}
+.my-name {
+  font-weight: bold;
+  color: teal;
+}
+section article h2 {
+  padding: 1rem 0;
+}
+section article img {
+  padding: 0.4rem 0;
+}
+section article ul li {
+  text-decoration: none;
+  margin: 0.4rem 1rem;
+  list-style: circle;
+}
+section article ul {
+  padding: 0.4rem 0;
+}
+.toggleNav {
+  display: none;
+}
+.toggle-button {
+  cursor: pointer;
+}
+
+.toggle-button img {
+  width: 15px;
+  height: 15px;
+}
+.logo {
+  font-weight: bold;
+}
+.html_content {
+  box-shadow: 1px 1px 10px #ff5200;
+  background-color: #444444;
+}
+
+.end-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.html_content {
+  width: 100%;
+}
+
+@media screen and (max-width: 370px) {
+  .blog-post-section article img {
+    width: 100%;
+    height: 16%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    position: absolute;
+    top: 70px;
+    left: -900px;
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
+    /* background-color: #e2dfd0; */
+    backdrop-filter: blur(20px);
+    transition: 0.5s all;
+  }
+  .toggler {
+    left: 0px;
+  }
+  .toggleNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    position: relative;
+  }
+  .end-footer {
+    flex-direction: column;
+  }
+}
